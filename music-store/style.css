@@ -1,0 +1,253 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    height:100%;  
+}
+.container{
+    background-image: url(/pexels-suvan-chowdhury-37305-144429.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-between; 
+    padding:2rem;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    width:100%;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+nav{
+    list-style-type: none;
+    display: flex;
+    gap:1em;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+}
+#check{
+    display: none;
+}
+label{
+    display: none;
+}
+
+.details {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content:center;
+    align-items: first baseline;
+    padding-left:3rem;
+    gap:1rem;
+}
+.details h1{
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:white;
+    
+    
+}
+.details button{
+    padding:0.5rem 2rem;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: none;
+    background-color:rgba(167, 33, 33, 0.623);
+    color:white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    cursor: pointer;
+}
+.details button:hover{
+    background-color:rgb(167, 33, 33);
+}
+.container2{
+    display: flex;
+    align-items: center;
+    padding:2rem;
+    gap:2rem;
+}
+.container2 img{
+    width:400px;
+    height:500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+.container2 h1{
+    padding-bottom: 1rem;
+    color:palevioletred;
+}
+.container2 p{
+    line-height: 2rem;
+    padding-bottom: 1rem;
+
+}
+.container2 button{
+    padding: 1rem 1.7rem;
+    border-radius: 10px;
+    border: none;
+    background-color:palevioletred ;
+    font-weight: bolder;
+}
+.container3{
+    padding:2rem;
+}
+.artist{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:300px 300px ;
+    gap:1.5rem;
+}
+.artist img{
+    height:300px;
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.artist p{
+    font-weight: bolder;
+    text-align: center;
+}
+.container3 h1{
+    color: palevioletred;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:0.3rem ;
+    padding-bottom:1rem;
+}
+.container4{
+    padding:2rem 5rem;
+    background-color: rgb(194, 240, 240)
+}
+.container4 h1{
+    color: palevioletred;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing:0.3rem ;
+    padding-bottom:2rem;
+}
+.category{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 2rem;
+}
+.category button{
+    width:100px;
+    padding:0.5rem 1.5rem;
+    cursor: pointer;
+    margin-right: 2rem;
+    border: none;
+    color:white;
+    background-color:rgba(235, 130, 130, 0.699); 
+}
+.category button:hover{
+    background-color:rgb(235, 130, 130);
+    color:black
+}
+.buttons button{
+    width:130px;
+    padding:0.5rem 1rem;
+    border:none;
+    color: palevioletred;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   
+}
+.songimages{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:300px 300px ;
+    gap:1.5rem;
+    
+}
+.songimages img{
+        height:300px;
+        width:100%;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    padding-block:1rem;
+}
+footer i{
+    color:black;
+    font-size: 2rem;
+
+}
+.container5{
+    background-color: white;
+}
+@media (max-width:725px) {
+    .details h1{
+        font-size: 4rem;
+      
+    }
+    .container2{
+        flex-direction: column;
+        padding:1rem;
+        gap:2rem;
+    }
+    .container2 img{
+        width:300px;
+        height:300px;
+    
+    }
+
+    .artist{
+        grid-template-columns:1fr 1fr  ;
+        grid-template-rows:200px 200px 200px ;
+    }
+    .artist img{
+        height:200px;
+        width:100%;
+       
+    }
+    .container4{
+        padding:2rem 1.5rem;
+        background-color: rgb(194, 240, 240)
+    }
+    .songimages{
+        grid-template-columns:1fr 1fr  ;
+        grid-template-rows:200px 200px 200px;
+        gap:1.5rem;
+    }
+    .songimages img{
+            height:200px;
+            width:100%;
+    }
+}
+@media (max-width:375px) {
+   .list{
+    width:100%;
+    flex-direction: column;
+    align-items: center;
+    display:none;
+    padding:20px;
+   }
+   #check:checked ~ .list{
+    display:flex;
+   }
+   label{
+    display: block;
+   }
+}
