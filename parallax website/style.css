@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+   height:100vh;
+   
+}
+.container1{
+   height:100%;
+   background-image:url(/download.jpeg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size:cover;
+   background-position: center;
+   position: relative;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-inline: 4rem;
+}
+.list{
+    list-style-type:none ;
+    display: flex;
+    gap:1rem;
+}
+.list a{
+    text-decoration: none;
+    color:white;
+    padding:0.5rem;
+    border-radius: 10px;
+
+}
+.list a:hover{
+    background-color: black;
+}
+.nature h4{
+    color:white
+}
+.text{
+    position:absolute;
+    top:35%;
+    right:30%;
+    font-size: 40px;
+    color:rgba(27, 37, 170, 0.89);
+    padding:1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    -webkit-text-stroke: 2px rgb(240, 240, 240);
+    color: transparent;
+    animation: reveal 2s linear ;
+}
+.container2{
+    height:100%;
+    width:100%;
+    background-color: black;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap:3rem;
+    padding-inline: 3rem;
+    
+}
+
+.container2 img{
+    width:100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+.container2 p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+@keyframes reveal {
+    0%{
+        
+            right:100%;
+    }
+    30%{
+        right:90%;
+    }
+    40%{
+        right:80%;
+    }
+    50%{
+        
+            right:70%;
+    }
+    70%{
+        right:60%
+    }
+    80%{
+        right:40%
+    }
+    100%{
+        right:35%;
+    }
+}
+.container3{
+    height:100%;
+    background-image:url(/nature4.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container3 .paragraph{
+    color:white;
+    padding:2rem;
+   background-color: rgb(0, 0, 0);
+   line-height: 1.5rem;
+   font-weight: bolder;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+
