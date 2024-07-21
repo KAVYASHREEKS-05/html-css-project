@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height:100vh;
+    background-color: #F0F5FF;
+    min-width:100vw;
+}
+.header{
+   height:70px;
+   display: flex;
+   gap:0.5rem;
+   align-items: center;
+   justify-content: space-evenly;
+   background-color: white;
+   width:100%;
+   position: fixed;
+   top:0;
+}
+.mainlogo{
+    height:50px;
+    width:80px;
+    margin-left: 5rem;
+    margin-right:1rem;
+}
+.searches{
+    padding:0.7rem;
+    width:50%;
+    border-radius: 10px;
+    border:none;
+    background-color: #F0F5FF;
+
+    
+}
+.search{
+    background-color: #F0F5FF;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    outline:none;
+    
+}
+
+.fa-sharp{
+    font-size:15px;
+}
+.icons{
+    display: flex;
+    gap:10px;
+    letter-spacing: 0.5px;
+   
+}
+.icons i{
+    color:transparent;
+    -webkit-text-stroke:0.7px black;
+}
+.seller{
+    margin-right: 5rem;
+}
+.itemlistcontainer{
+    margin: 5rem 20px 20px 20px;
+}
+.itemlist{
+    display: flex;
+    height:100%;
+    width:100%;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:rgb(255, 255, 255);
+    padding:0.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.items{
+    padding:5px
+}
+.items img{
+    width:70px;
+    height:70px;
+    display: block;
+    margin: auto;
+}
+.items p{
+    text-align: center;
+    padding-block: 10px;
+}
+.imageslider{
+    position:relative;
+    margin:20px;
+    overflow: hidden;
+}
+.slider{
+    width:100%;
+    height:200px;
+    display: grid;
+    grid-template-columns: repeat(4,100%);
+    animation: sliding 10s alternate  infinite;
+   
+}
+#slider1{
+    background-image: url(images/sliders/slide1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slider2{
+    background-image: url(images/sliders/slide2.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slider3{
+    background-image: url(images/sliders/slide3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slider4{
+    background-image: url(images/sliders/slide4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.abutton a{
+   background-color: rgb(255, 255, 255);
+   width:15px;
+   height:15px;
+   border-radius:50%;
+   display:inline-block;
+}
+.abutton{
+    position:absolute;
+    left:50%;
+    bottom:0;
+  
+}
+@keyframes sliding{
+    0%,90%,100%{
+        transform: translateX(0%);
+    }
+    10%,20%,80%{
+        transform: translateX(-100%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    30%,40%,70%{
+        transform: translateX(-200%);
+    }
+    50%,60%{
+        transform: translateX(-300%);
+    }
+
+}
+.purchasecontainer{
+    margin:20px;
+    background-color:white;
+    overflow: hidden;
+    padding:2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.purchaseitem{
+    display: flex;
+    width:100%;
+    gap:10px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.purchaseitem .purchase  {
+   border: 1px solid rgba(0, 0, 0, 0.103);
+   margin-top:1rem;
+   padding:1rem;
+   border-radius: 5px;
+}
+.purchase img {
+    width:100%;
+    height:150px;
+}
+.purchase  p,h4 {
+    text-align: center;
+    line-height: 20px;
+}
+.offers{
+    margin:20px;
+    overflow: hidden;
+}
+.offercontainer{
+    display:grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+}
+.offercontainer .offerimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.footer{
+    background-color: black;
+    color:white;
+}
+.footercontainer{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:3rem;
+    gap:1rem;
+    line-height: 1.3rem;
+}
+.details span{
+    color: rgba(255, 255, 255, 0.308);
+    display: block;
+    padding-bottom: 10px;
+}
+.details li{
+    list-style-type: none;
+    font-size: small;
+    font-weight: bolder;
+}
+.social span{
+    display: block;
+    padding-top:10px
+}
+.fa-brands{
+    display: inline-block;
+    margin-right:10px;
+    color: transparent;
+    -webkit-text-stroke: 1px  white;
+}
+.contactinf{
+    position: relative;
+}
+.line::before{
+    content: "";
+    border-left: 2px solid rgba(255, 255, 255, 0.103);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:-50px;
+}
+
