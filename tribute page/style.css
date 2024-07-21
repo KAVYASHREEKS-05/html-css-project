@@ -1,0 +1,138 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body{
+    min-height:100vh;
+}
+
+header{
+   width:100%;
+   background-color: black;
+   color:white;
+   padding:10px;
+   text-align: center;
+   position:fixed;
+   top:0;
+   z-index:100
+}
+
+
+.details{
+    display:inline-flex;
+    gap:40px;
+    margin-inline:7rem;
+    margin-top:1.7rem;
+    text-wrap: wrap;
+}
+.details img{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    margin-top:3rem;
+}
+.profileinf{
+    margin-top:3rem;
+    line-height: 25px;
+}
+.profileinf h1{
+    text-align: center;
+    padding-block: 20px;
+    color:rgb(114, 114, 226)
+}
+a{
+  text-decoration: none;
+  color: black;
+  display: block;
+  border: 2px solid black;
+  width:fit-content;
+  padding:10px;
+  margin-top:20px;
+  margin:auto;
+  border-radius: 3px;
+}
+
+
+.personalinf{
+    display: grid;
+    grid-template-rows: auto;
+    margin:20px;
+    row-gap:3rem;
+}
+.heading{
+    padding:2rem;
+    text-align: center;
+    color:rgb(114, 114, 226);
+    text-decoration: underline;
+}
+.personalinf p{
+    line-height: 25px;
+}
+.t20{
+    display:inline-flex;
+    gap:1.5rem;
+    place-items: center;
+}
+.t20 img{
+    width:300px;
+    height:300px;
+}
+.t20 p{
+    text-align: center;
+}
+
+
+.table{
+    margin:auto;
+    border-style:solid;
+    border-collapse: collapse;
+}
+.table td,th{
+    padding:10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.table th{
+    background-color:rgb(3, 3, 3); 
+    color:white;
+}
+footer{
+    background-color: black!important;
+    height:50px;
+    width:100%
+}
+a:hover{
+    background-color:rgb(114, 114, 226); 
+    border: 1px solid rgb(114, 114, 226);
+    color:white;
+}
+@media (max-width:735px) {
+    .details{
+        display:block;
+        margin-inline:20px;
+    }
+    .details img{
+        margin:5rem auto auto auto;
+        display:block;
+    }
+    .personalinf{
+        row-gap:0.2rem;
+    }
+
+    .profileinf h1{
+        padding-block: 30px;
+    }
+    .personalinf p{
+       padding-top: 1rem;
+    }
+    a{
+        margin-top:20px;
+    }
+    .t20{
+        display: grid;
+        place-items: center;
+    }
+}
